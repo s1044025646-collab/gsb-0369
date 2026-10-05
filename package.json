@@ -1,0 +1,30 @@
+{
+  "name": "binary-grid-edt",
+  "version": "1.0.0",
+  "description": "二值网格精确平方欧氏距离变换后端",
+  "type": "commonjs",
+  "main": "dist/server.js",
+  "bin": {
+    "edt": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/tests/*.test.js\"",
+    "start": "node dist/server.js",
+    "demo": "npm run build && node dist/cli.js demo"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "keywords": [
+    "distance-transform",
+    "euclidean-distance",
+    "sqlite",
+    "typescript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.9.0"
+  }
+}
